@@ -182,6 +182,12 @@ body {
 
 /* ==================================================== Media queries */
 
+@media screen and (max-width: 991px) {
+    .skill .tecno {
+        margin-top: 1.5rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .toggle-button {
         display: none;
