@@ -3,11 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Nahuel Strático">
+    <meta name="description" content="Portfolio Desarrollo web Full Stack">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,bootstrap, stratico, nahuel, portfolio, desarrollo web, frontend developers, fullstack developers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strático Nahuel</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <!-- Style Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -19,27 +27,20 @@
             <div class="col-3 bgcolor-black">
                 <nav class="primary-nav navbar-expand-md">
                     <div class="site-title text-center text-light">
-                        <a href="#" class="navbar-brand font-staat font-size-40">Strático</a>
-                        <p class="description text-uppercase font-os">Nahuel</p>
+                        <a href="#" class="navbar-brand logo m-0 p-0">Strático</a>
+                        <p class="description text-uppercase font-roboto font-size-20 m-0">Nahuel</p>
                     </div>
                     <div class="d-flex flex-column">
-                        <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
-                        <a href="#about" class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
-                        <a href="#services" class="nav-item nav-link text-white-50 font-os font-size-16 active">Services</a>
-                        <a href="#portfolio" class="nav-item nav-link text-white-50 font-os font-size-16 active">Portfolio</a>
-                        <!-- <a href="#news" class="nav-item nav-link text-white-50 font-os font-size-16 active">News</a> -->
-                        <a href="#footer" class="nav-item nav-link text-white-50 font-os font-size-16 active">Contact Us</a>
+                        <a href="#home" class="nav-item nav-link text-white-50 font-roboto font-size-16 active">Home</a>
+                        <a href="#about" class="nav-item nav-link text-white-50 font-roboto font-size-16 active">Sobre Mi</a>
+                        <a href="#servicios" class="nav-item nav-link text-white-50 font-roboto font-size-16 active">Servicios</a>
+                        <a href="#portfolio" class="nav-item nav-link text-white-50 font-roboto font-size-16 active">Portfolio</a>
+                        <a href="#contacto" class="nav-item nav-link text-white-50 font-roboto font-size-16 active">Contacto</a>
                     </div>
                 </nav>
             </div>
         </div>
         <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
-        <div class="social">
-            <span class="mr-3"><i class="fab fa-facebook-f"></i></span>
-            <span class="mr-3"><i class="fab fa-twitter"></i></span>
-            <span class="mr-3"><i class="fab fa-instagram"></i></span>
-            <span class="mr-3"><i class="fab fa-youtube"></i></span>
-        </div>
     </header>
     <!-- #header area -->
 
@@ -53,8 +54,8 @@
                     <img src="./assets/fondo.jpg" alt="imagen de fondo" class="hero-image">
                     <div class="main-banner_content">
                         <div class="main_img"></div>
-                        <h1 class="main-banner_title">Nahuel Strático</h1>
-                        <h5><span id="typed"></span></h5>
+                        <h1 class="title">Nahuel Strático</h1>
+                        <h5 class="font-roboto font-size-27"><span id="typed"></span></h5>
                     </div>
                 </div>
                 <!-- #site-banner area -->
@@ -62,23 +63,23 @@
                 <!-- About me -->
                 <section class="about px-4 my-5" id="about">
                     <div class="me py-5">
-                        <h5 class="text-uppercase text-muted">Información</h5>
-                        <h2 class="text-uppercase">Sobre Mi</h2>
+                        <h5 class="text-uppercase text-muted font-open m-0 p-0">Información</h5>
+                        <h2 class="text-uppercase font-title m-0 p-0">Sobre Mi</h2>
                     </div>
                     <div class="row m-0">
                         <div class="col-12 col-md-5 pl-0">
                             <img src="./assets/nahuel.jpg" alt="mi foto" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-6">
-                            <h6 class="text-uppercase text-muted">Sobre Mi</h6>
-                            <h5>Soy Nahuel Strático, <span id="typed_2"></span>.</h5>
-                            <p>Disfruto de digitalizar empresas que no cuenten con presencia online. Además de formar parte de proyecto que aporten valor a la comunidad, acercando la tecnología a las personas.
-                                <!-- <br/> <br/> Disfruto de digitalizar empresas que no cuenten con presencia online. Además de formar parte de proyecto que aporten valor a la comunidad, acercando la tecnología a las personas. -->
+                            <h6 class="text-uppercase text-muted font-open">Sobre Mi</h6>
+                            <h5 class="font-size-20">Soy Nahuel Strático, <span id="typed_2"></span>.</h5>
+                            <p class="font-open">
+                                Disfruto de digitalizar empresas que no cuenten con presencia online. Además de formar parte de proyecto que aporten valor a la comunidad, acercando la tecnología a las personas.
                             </p>
                             <div class="d-flex flex-column flex-wrap justify-content-between py-3 datos">
-                                <p><strong>website:</strong> straticonahuel.com</p>
-                                <p><strong>email:</strong> straticonahuel@gmail.com</p>
-                                <p><strong>telefono:</strong> 11 6879 1292</p>
+                                <p><strong>Website:</strong> straticonahuel.com</p>
+                                <p><strong>Email:</strong> straticonahuel@gmail.com</p>
+                                <p><strong>Teléfono:</strong> 11 6879 1292</p>
                             </div>
                             <button class="btn btn-dark text-uppercase mr-3">Descargar CV</button>
                         </div>
@@ -89,8 +90,8 @@
                 <!-- Skills -->
                 <section class="skill px-4" id="skill">
                     <div class="habilidad py-2">
-                        <h5 class="text-uppercase text-muted">Habilidades</h5>
-                        <h2 class="text-uppercase">Skills</h2>
+                        <h5 class="text-uppercase text-muted font-open m-0 p-0">Habilidades</h5>
+                        <h2 class="text-uppercase font-title">Skills</h2>
                     </div>
 
                     <div class="row">
@@ -137,40 +138,91 @@
                 <!-- #Skills -->
 
                 <!-- Servicios -->
-                <section class="servicios px-4 py-5">
+                <section class="servicios px-4 py-5" id="servicios">
                     <div class="do py-5">
-                        <h5 class="text-uppercase text-muted">Cómo puedo ayudarte</h5>
-                        <h2 class="text-uppercase">Servicios</h2>
+                        <h5 class="text-uppercase text-muted font-open m-0 p-0">Cómo puedo ayudarte</h5>
+                        <h2 class="text-uppercase font-title">Servicios</h2>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4 col-dm col-sm-6 mb-4 text-center">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 text-center">
                             <div class="panel border p-4">
                                 <span class="icon text-secondary"><i class="fas fa-laptop-code fa-3x"></i></span>
                                 <h4 class="py-4">Desarrollo web</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ullam!</p>
+                                <p>Desarrollos a medida de páginas y aplicaciones web.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-dm col-sm-6 mb-4 text-center">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 text-center">
                             <div class="panel border p-4">
                                 <span class="icon text-secondary"><i class="fas fa-mobile-alt fa-3x"></i></span>
-                                <h4 class="py-4">Desarrollo web</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ullam!</p>
+                                <h4 class="py-4">Full Responsive</h4>
+                                <p>Tu sitio web adaptada a todos los dispositivos.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-dm col-sm-6 mb-4 text-center">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 text-center">
                             <div class="panel border p-4">
                                 <span class="icon text-secondary"><i class="far fa-lightbulb fa-3x"></i></span>
-                                <h4 class="py-4">Desarrollo web</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ullam!</p>
+                                <h4 class="py-4">Soluciones</h4>
+                                <p>Juntos encontraremos la mejor solución a tu necesidad.</p>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- #Servicios -->
+
+                <!-- Portfolio -->
+                <!-- #Portfolio -->
+
+                <!-- Contacto -->
+                <section class="servicios px-4 py-5" id="contacto">
+                    <div class="do py-5">
+                        <h5 class="text-uppercase text-muted font-open m-0 p-0">Hablame de tu proyecto.</h5>
+                        <h2 class="text-uppercase font-title">Contacto</h2>
+                    </div>
+
+                    <div class="row justify-content-center align-content-center mt-5">
+
+                        <div class="col-12 col-md-9 col-lg-7 text-center">
+                            <h3 class="text-uppercase text-muted font-open mb-5 p-0">Contame tu objetivo y hagamoslo realidad</h3>
+
+                            <!-- Formulario -->
+                            <form class="form-group">
+                                <div class="row">
+                                    <div class="col-12 mb-4 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Nombre">
+                                    </div>
+                                    <div class="col-12 mb-4 col-sm-6">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Deja tu mensaje..."></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- # Contacto -->
+
+                <!-- Footer -->
+                <footer id="footer" class="px-4 py-4">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <a href=""></a>
+                            <a href="https://github.com/NahuelStratico" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- #Footer -->
             </div>
         </div>
     </main>
+
+
 
 
 

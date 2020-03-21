@@ -9,22 +9,18 @@ body {
     --color-white: #ffffff;
     --color-border: #ffffff34;
     --font-staat: 'Staatliches', cursive;
-    --font-os: 'Oswald', sans-serif;
-    --font-ram: 'Rambla', sans-serif;
+    --font-open: 'Open Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 
 /* global classes */
 
-.font-staat {
-    font: normal 400 18px var(--font-staat);
-}
-
-.font-os {
+.font-roboto {
     font: normal 300 18px var(--font-os);
 }
 
-.font-ram {
+.font-open {
     font: normal bold 18px var(--font-ram);
 }
 
@@ -71,6 +67,12 @@ body {
     height: 100vh;
 }
 
+#header .logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
 #header .site-title {
     padding: 3rem 0;
 }
@@ -105,6 +107,9 @@ body {
 }
 
 
+/* ============================================== MAIN */
+
+
 /* site-main */
 
 .main-banner {
@@ -114,6 +119,12 @@ body {
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     position: relative;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
 }
 
 .main-banner .main-banner_content {
@@ -143,6 +154,15 @@ body {
 }
 
 
+/* ======================= FONT PARA TITULOS */
+
+.font-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
+
 /* ======================================= Skills */
 
 
@@ -151,7 +171,7 @@ body {
 .skill {
     background: #F5F5F5;
     margin-bottom: 3rem;
-    padding: 5rem 0;
+    padding: 7rem 0;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     margin-top: 6rem;
 }
@@ -176,7 +196,20 @@ body {
 }
 
 .skill .pill {
-    font-size: .5em;
+    font-size: .7em;
+}
+
+
+/* ================================================ Footer */
+
+#footer {
+    background: #F5F5F5;
+    margin-top: 2rem;
+}
+
+#footer a {
+    color: #999999;
+    font-size: 3.5em;
 }
 
 

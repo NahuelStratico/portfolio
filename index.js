@@ -48,3 +48,14 @@ let typed_2 = new Typed('#typed_2', {
     backspeed: 50,
     loop: true
 });
+
+// Scroll automatic
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
