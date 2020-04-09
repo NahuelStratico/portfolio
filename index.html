@@ -17,18 +17,20 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
 
     <!-- header area -->
     <header id="header">
-        <div class="row m-0">
+        <div class="row m-0 ">
             <div class="col-3 bgcolor-black">
                 <nav class="primary-nav navbar-expand-md">
                     <div class="site-title text-center text-light">
                         <a href="#" class="navbar-brand logo m-0 p-0">Strático</a>
-                        <p class="description text-uppercase font-roboto font-size-20 m-0">Nahuel</p>
+                        <p class="description-name text-uppercase font-roboto font-size-20 m-0">Nahuel</p>
                     </div>
                     <div class="d-flex flex-column">
                         <a href="#home" class="nav-item nav-link text-white-50 font-roboto font-size-16 active">Home</a>
@@ -68,12 +70,13 @@
                     </div>
                     <div class="row m-0">
                         <div class="col-12 col-md-5 pl-0">
-                            <img src="./assets/nahuel.jpg" alt="mi foto" class="img-fluid">
+                            <img src="./cv.jpg" alt="mi foto" class="img-fluid">
                         </div>
                         <div class="col-12 col-md-6">
                             <h6 class="text-uppercase text-muted font-open">Sobre Mi</h6>
-                            <h5 class="font-size-20">Soy Nahuel Strático, <span id="typed_2"></span>.</h5>
-                            <p class="font-open">
+                            <h5 class="font-size-20">Soy Nahuel Strático,</h5>
+                            <span class="font-size-20" id="typed_2"></span>
+                            <p class="font-open mt-4">
                                 Disfruto de digitalizar empresas que no cuenten con presencia online. Además de formar parte de proyecto que aporten valor a la comunidad, acercando la tecnología a las personas.
                             </p>
                             <div class="d-flex flex-column flex-wrap justify-content-between py-3 datos">
@@ -81,7 +84,11 @@
                                 <p><strong>Email:</strong> straticonahuel@gmail.com</p>
                                 <p><strong>Teléfono:</strong> 11 6879 1292</p>
                             </div>
-                            <button class="btn btn-dark text-uppercase mr-3">Descargar CV</button>
+                            <button class="btn btn-dark text-uppercase mr-3">
+                                <a href="./cv.pdf" style="color: #ffffff;" target="blank" type="application/pdf">
+                                    Descargar CV
+                                </a> 
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -130,7 +137,7 @@
                             <div class="tecno" style="border-color: rgb(0, 172, 237);">
                                 <span>react</span>
                             </div>
-                            <span class="pill badge badge-pill badge-primary">próximamente</span>
+                            <span class="pill badge badge-pill badge-primary">En proceso</span>
                         </div>
 
                     </div>
@@ -171,6 +178,20 @@
                 <!-- #Servicios -->
 
                 <!-- Portfolio -->
+                <section class="servicios px-4 py-5" id="portfolio">
+                    <div class="do py-5">
+                        <h5 class="text-uppercase text-muted font-open m-0 p-0">Mis trabajos en Open Source</h5>
+                        <h2 class="text-uppercase font-title">Github</h2>
+                    </div>
+
+                    <!-- Consumo API Github -->
+                    <div class="row justify-content-center" id="git">
+                        <div class="col">
+                            <div id="github" class="d-flex flex-wrap justify-content-around align-items-center text-center"></div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- #Portfolio -->
 
                 <!-- Contacto -->
@@ -186,21 +207,27 @@
                             <h3 class="text-uppercase text-muted font-open mb-5 p-0">Contame tu objetivo y hagamoslo realidad</h3>
 
                             <!-- Formulario -->
-                            <form class="form-group">
+                            <form class="form-group" id="formulario-contacto" method="POST">
                                 <div class="row">
                                     <div class="col-12 mb-4 col-sm-6">
-                                        <input type="text" class="form-control" placeholder="Nombre">
+                                        <input type="text" class="form-control" name="name" placeholder="Nombre" required>
                                     </div>
                                     <div class="col-12 mb-4 col-sm-6">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12">
-                                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Deja tu mensaje..."></textarea>
+                                        <textarea class="form-control" id="mensaje" rows="3" name="msg" placeholder="Deja tu mensaje..." required></textarea>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-block mt-3">Enviar</button>
+                                <button type="submit" id="btn" class="btn btn-primary btn-block mt-3">Enviar</button>
+                            
+                                <div id="alerta" class="alert mt-5 resp">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+                                    <strong class="respuesta"></strong> <span class="mensaje-alerta"></span>
+                                </div>
+                            
                             </form>
                         </div>
                     </div>
@@ -209,11 +236,16 @@
 
                 <!-- Footer -->
                 <footer id="footer" class="px-4 py-4">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center text-center">
+                        <h4 class="text-muted font-open">Buscame en mis redes sociales</h4>
                         <div class="col-12 d-flex justify-content-center align-items-center">
-                            <a href=""></a>
-                            <a href="https://github.com/NahuelStratico" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href=""></a>
+                            <a href="https://www.linkedin.com/in/nahuelstratico/" target="_blank" style="margin-right: 3rem;">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/NahuelStratico" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            
                         </div>
                     </div>
                 </footer>
@@ -224,10 +256,12 @@
 
 
 
-
+   <!-- AJAX -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
@@ -237,7 +271,9 @@
     <script src="./vendor/typed/typed.min.js"></script>
 
     <!-- Index JS -->
+    <script src="enviar.js"></script> 
     <script src="./index.js"></script>
+    
 </body>
 
 </html>

@@ -21,10 +21,15 @@ $(document).ready(function(e) {
 function toggle_onclick($win, $navbar, width) {
     if ($win.width() <= 768) {
         $navbar.css({ left: `-${width}px` });
+       
     } else {
         $navbar.css({ left: '0px' });
     }
 }
+
+
+
+
 
 // Vendor Typed JS
 
@@ -59,3 +64,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+
+
+
+
+// Api Github
+
+const url = 'https://api.github.com/users/NahuelStratico/repos';
+const contenido = document.getElementById('github');
+
+fetch(url)
+.then(res => res.json())
+.then(data =>  {
+    console.log(data);
+   
+    let resultadoHTML = '';
+
+    data.forEach(function(obj) {
+        console.log(obj);
+        const name = obj.name;
+        let description = obj.description;
+        let ver = obj.svn_url;
+        // let height = obj.images.fixed_width.height;
+        // let title = obj.title;
+        resultadoHTML += `
+
+        <div class="content">
+            <h4 class="name">
+            <a href=${ver} class="button">${name}</a>
+            </h4>
+            <p class="description">${description}</p>
+        </div>
+        
+        `;
+    });
+
+    contenido.innerHTML = resultadoHTML;
+
+})
+.catch(function(err){
+    console.log(err);
+})
