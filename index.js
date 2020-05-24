@@ -35,7 +35,7 @@ function toggle_onclick($win, $navbar, width) {
 
 let typed = new Typed('#typed', {
     strings: [
-        'Web Developers',
+        'Web Developer',
         'Freelancer'
     ],
     typeSpeed: 50,
@@ -46,7 +46,7 @@ let typed = new Typed('#typed', {
 // About Me Vendor Typed JS_2
 let typed_2 = new Typed('#typed_2', {
     strings: [
-        'Web Developers',
+        'Web Developer',
         'Freelancer'
     ],
     typeSpeed: 50,
@@ -93,7 +93,7 @@ fetch(url)
 
         <div class="content">
             <h4 class="name">
-            <a href=${ver} class="button">${name}</a>
+            <a target="blank" href=${ver} class="button">${name}</a>
             </h4>
             <p class="description">${description}</p>
         </div>
